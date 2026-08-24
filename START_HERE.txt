@@ -1,0 +1,24 @@
+ERDOS #7 CODEX CAMPAIGN — START HERE
+
+1. Unzip this folder on the machine where you run the Codex app.
+2. Open the extracted `erdos7_codex_campaign` folder as one Codex project.
+3. Read `docs/CODEX_LAUNCH.md`.
+4. Start six separate Codex threads/worktrees using prompts A–F.
+5. Optional but recommended: start a seventh coordinator thread using `coordination/COORDINATOR_PROMPT.md`.
+6. Keep the agents independent. Promote results only after Track E has audited them.
+
+Useful checks from a terminal:
+
+    python scripts/validate_checkpoint.py
+    ./scripts/replay_stage18_exact.sh
+
+Expected exact replay ending:
+
+    STATE2275_FULL_EXACT_REPLAY=PASS
+    optimizer_calls=0
+
+Current local git tag:
+    codex-ready-2026-08-24
+
+Current status:
+    OPEN — no QED claim.
