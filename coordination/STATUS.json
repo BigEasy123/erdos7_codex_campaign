@@ -4,13 +4,13 @@
   "overall_status": "OPEN",
   "qed_gates_closed": 0,
   "qed_gates_total": 6,
-  "current_bottleneck": "state2275 correlated arbitrary-depth survivor dispersion / exact-cardinality-9 exhaustion layer",
+  "current_bottleneck": "CARD9 exact closure path is blocked; no dependency has yet been audited as AUDITED_EXACT by Track E",
   "tracks": {
-    "A_card9": "READY",
-    "B_structure": "READY",
-    "C_commonU": "READY",
-    "D_HN_BBMST": "READY",
-    "E_referee": "READY",
-    "F_global_interface": "READY"
+    "A_card9": "BLOCKED_DEPENDENCY",
+    "B_structure": "HEURISTIC",
+    "C_commonU": "HEURISTIC",
+    "D_HN_BBMST": "HEURISTIC",
+    "E_referee": "HEURISTIC",
+    "F_global_interface": "HEURISTIC"
   }
 }

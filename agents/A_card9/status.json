@@ -1,8 +1,17 @@
 {
   "track": "A_card9",
-  "status": "HEURISTIC",
-  "headline": "Track initialized; no result yet",
-  "dependencies": [],
-  "artifacts": [],
-  "next_action": "Execute BRIEF.md"
+  "status": "BLOCKED_DEPENDENCY",
+  "headline": "Exact CARD9 solver is not repository-portable and depends on a missing phase helper; no valid theorem claim can be promoted.",
+  "dependencies": [
+    "Rebuild missing eonly_card9_hybridprefix helper from derivation",
+    "Validate phase oracle on saved rejected 9-parent sets",
+    "Reproduce 42-state symmetry maps and exact nogoods without stale absolute paths"
+  ],
+  "artifacts": [
+    "agents/A_card9/RESULT.md",
+    "agents/A_card9/verify_repo_relative.py",
+    "artifacts/current_state/EONLY_PHASE_BENDERS.json",
+    "artifacts/current_state/CARD9_SPARSE_EXACT_RECORDS.json"
+  ],
+  "next_action": "Reconstruct the missing phase oracle and re-run repository-relative CARD9 validation before any exact closure claim."
 }
