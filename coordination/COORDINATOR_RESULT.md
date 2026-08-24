@@ -20,18 +20,13 @@ These pass replay without optimizer calls and are therefore the only exact asset
 
 ## Unsafe or unverified claims
 
-- Track A is currently blocked by a repository-portability and missing-helper failure. See [agents/A_card9/RESULT.md](../agents/A_card9/RESULT.md) and the verifier [agents/A_card9/verify_repo_relative.py](../agents/A_card9/verify_repo_relative.py).
+- Track A has cleared its repository-portability and missing-helper failure. Its current result is numerical evidence only: five saved phase records replay exactly and a fresh sparse iteration rejected another 9-set, but no exact closure certificate exists. See [agents/A_card9/RESULT.md](../agents/A_card9/RESULT.md).
 - There is no theorem-level result yet from Track B, C, D, or F.
 - No Track E referee audit has been produced yet. Because no dependency has been marked AUDITED_EXACT, no final proof path is eligible for promotion.
 
 ## Smallest current obstruction to QED
 
-The smallest hard obstruction is the local CARD9 closure path:
-
-1. the phase helper is missing;
-2. the active solver still includes machine-specific absolute paths;
-3. no replayable exact 9-parent certificate or genuine survivor has been frozen;
-4. without that, the state-2275 bridge cannot be closed or handed to B/C/D/F in a certified form.
+The smallest hard obstruction is the local CARD9 closure path: no optimizer-independent exact 9-parent certificate or genuine phase-feasible survivor has been frozen. The separate `8.764...` LP record is also insufficient for exactification because it stores no matrix or dual certificate.
 
 ## Redirective plan
 

@@ -9,8 +9,8 @@
 ## Local state-2275 proof path
 
 - A-card9 path: [agents/A_card9/BRIEF.md](../agents/A_card9/BRIEF.md)
-  - Depends on repository portability and a valid phase oracle.
-  - Status: blocked by missing helper and absolute paths.
+  - Depends on a valid phase oracle and an optimizer-independent closure certificate or survivor witness.
+  - Status: numerical evidence; portability and five-record phase replay checks pass.
 - B-structure path: [agents/B_structure/BRIEF.md](../agents/B_structure/BRIEF.md)
   - Intended to explain slab concentration and rule out or shrink the near-extremal packet family.
   - Status: no theorem-level output yet.
