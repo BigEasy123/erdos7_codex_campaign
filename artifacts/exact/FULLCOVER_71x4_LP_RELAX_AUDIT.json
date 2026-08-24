@@ -1,0 +1,5407 @@
+{
+  "summary": {
+    "total": 284,
+    "lp_infeasible": 284,
+    "lp_feasible": 0,
+    "preinf": 0,
+    "resume_elapsed": 6.1762168407440186
+  },
+  "results": [
+    {
+      "orbit": 0,
+      "target": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4948
+    },
+    {
+      "orbit": 0,
+      "target": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3895
+    },
+    {
+      "orbit": 0,
+      "target": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3829
+    },
+    {
+      "orbit": 0,
+      "target": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3809
+    },
+    {
+      "orbit": 1,
+      "target": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4948
+    },
+    {
+      "orbit": 1,
+      "target": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3895
+    },
+    {
+      "orbit": 1,
+      "target": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3829
+    },
+    {
+      "orbit": 1,
+      "target": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3809
+    },
+    {
+      "orbit": 2,
+      "target": [
+        0,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4948
+    },
+    {
+      "orbit": 2,
+      "target": [
+        0,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3895
+    },
+    {
+      "orbit": 2,
+      "target": [
+        0,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3829
+    },
+    {
+      "orbit": 2,
+      "target": [
+        0,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3809
+    },
+    {
+      "orbit": 3,
+      "target": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4946
+    },
+    {
+      "orbit": 3,
+      "target": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3888
+    },
+    {
+      "orbit": 3,
+      "target": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3839
+    },
+    {
+      "orbit": 3,
+      "target": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3811
+    },
+    {
+      "orbit": 4,
+      "target": [
+        0,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4946
+    },
+    {
+      "orbit": 4,
+      "target": [
+        0,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3888
+    },
+    {
+      "orbit": 4,
+      "target": [
+        0,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3839
+    },
+    {
+      "orbit": 4,
+      "target": [
+        0,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3811
+    },
+    {
+      "orbit": 5,
+      "target": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4934
+    },
+    {
+      "orbit": 5,
+      "target": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3887
+    },
+    {
+      "orbit": 5,
+      "target": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3829
+    },
+    {
+      "orbit": 5,
+      "target": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3801
+    },
+    {
+      "orbit": 6,
+      "target": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 6,
+      "target": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 6,
+      "target": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 6,
+      "target": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 7,
+      "target": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 7,
+      "target": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 7,
+      "target": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 7,
+      "target": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 8,
+      "target": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 8,
+      "target": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 8,
+      "target": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 8,
+      "target": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 9,
+      "target": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 9,
+      "target": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 9,
+      "target": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 9,
+      "target": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 10,
+      "target": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 10,
+      "target": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 10,
+      "target": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 10,
+      "target": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 11,
+      "target": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4936
+    },
+    {
+      "orbit": 11,
+      "target": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3876
+    },
+    {
+      "orbit": 11,
+      "target": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3837
+    },
+    {
+      "orbit": 11,
+      "target": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3799
+    },
+    {
+      "orbit": 12,
+      "target": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4924
+    },
+    {
+      "orbit": 12,
+      "target": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3875
+    },
+    {
+      "orbit": 12,
+      "target": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3827
+    },
+    {
+      "orbit": 12,
+      "target": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3789
+    },
+    {
+      "orbit": 13,
+      "target": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4924
+    },
+    {
+      "orbit": 13,
+      "target": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3875
+    },
+    {
+      "orbit": 13,
+      "target": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3827
+    },
+    {
+      "orbit": 13,
+      "target": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3789
+    },
+    {
+      "orbit": 14,
+      "target": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4924
+    },
+    {
+      "orbit": 14,
+      "target": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3875
+    },
+    {
+      "orbit": 14,
+      "target": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3827
+    },
+    {
+      "orbit": 14,
+      "target": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3789
+    },
+    {
+      "orbit": 15,
+      "target": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 15,
+      "target": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 15,
+      "target": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 15,
+      "target": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 16,
+      "target": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 16,
+      "target": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 16,
+      "target": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 16,
+      "target": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 17,
+      "target": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 17,
+      "target": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 17,
+      "target": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 17,
+      "target": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 18,
+      "target": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 18,
+      "target": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 18,
+      "target": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 18,
+      "target": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 19,
+      "target": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 19,
+      "target": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 19,
+      "target": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 19,
+      "target": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 20,
+      "target": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 20,
+      "target": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 20,
+      "target": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 20,
+      "target": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 21,
+      "target": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 21,
+      "target": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 21,
+      "target": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 21,
+      "target": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 22,
+      "target": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 22,
+      "target": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 22,
+      "target": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 22,
+      "target": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 23,
+      "target": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 23,
+      "target": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 23,
+      "target": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 23,
+      "target": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 24,
+      "target": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 24,
+      "target": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 24,
+      "target": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 24,
+      "target": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 25,
+      "target": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 25,
+      "target": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 25,
+      "target": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 25,
+      "target": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 26,
+      "target": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 26,
+      "target": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 26,
+      "target": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 26,
+      "target": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 27,
+      "target": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 27,
+      "target": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 27,
+      "target": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 27,
+      "target": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 28,
+      "target": [
+        1,
+        0,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 28,
+      "target": [
+        1,
+        0,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 28,
+      "target": [
+        1,
+        0,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 28,
+      "target": [
+        1,
+        0,
+        3,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 29,
+      "target": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 29,
+      "target": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 29,
+      "target": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 29,
+      "target": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 30,
+      "target": [
+        1,
+        0,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 30,
+      "target": [
+        1,
+        0,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 30,
+      "target": [
+        1,
+        0,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 30,
+      "target": [
+        1,
+        0,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 31,
+      "target": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 31,
+      "target": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 31,
+      "target": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 31,
+      "target": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 32,
+      "target": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 32,
+      "target": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 32,
+      "target": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 32,
+      "target": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 33,
+      "target": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 33,
+      "target": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 33,
+      "target": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 33,
+      "target": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 34,
+      "target": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 34,
+      "target": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 34,
+      "target": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 34,
+      "target": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 35,
+      "target": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 35,
+      "target": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 35,
+      "target": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 35,
+      "target": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 36,
+      "target": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 36,
+      "target": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 36,
+      "target": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 36,
+      "target": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 37,
+      "target": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 37,
+      "target": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 37,
+      "target": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 37,
+      "target": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 38,
+      "target": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 38,
+      "target": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 38,
+      "target": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 38,
+      "target": [
+        1,
+        1,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 39,
+      "target": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 39,
+      "target": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 39,
+      "target": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 39,
+      "target": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 40,
+      "target": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 40,
+      "target": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 40,
+      "target": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 40,
+      "target": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 41,
+      "target": [
+        1,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 41,
+      "target": [
+        1,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 41,
+      "target": [
+        1,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 41,
+      "target": [
+        1,
+        1,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 42,
+      "target": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 42,
+      "target": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3737
+    },
+    {
+      "orbit": 42,
+      "target": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 42,
+      "target": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 43,
+      "target": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 43,
+      "target": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 43,
+      "target": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 43,
+      "target": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 44,
+      "target": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 44,
+      "target": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 44,
+      "target": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 44,
+      "target": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 45,
+      "target": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 45,
+      "target": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 45,
+      "target": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 45,
+      "target": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 46,
+      "target": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4759
+    },
+    {
+      "orbit": 46,
+      "target": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3734
+    },
+    {
+      "orbit": 46,
+      "target": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3691
+    },
+    {
+      "orbit": 46,
+      "target": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3763
+    },
+    {
+      "orbit": 47,
+      "target": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4759
+    },
+    {
+      "orbit": 47,
+      "target": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3734
+    },
+    {
+      "orbit": 47,
+      "target": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3691
+    },
+    {
+      "orbit": 47,
+      "target": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3763
+    },
+    {
+      "orbit": 48,
+      "target": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4759
+    },
+    {
+      "orbit": 48,
+      "target": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3734
+    },
+    {
+      "orbit": 48,
+      "target": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3691
+    },
+    {
+      "orbit": 48,
+      "target": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3763
+    },
+    {
+      "orbit": 49,
+      "target": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 49,
+      "target": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 49,
+      "target": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 49,
+      "target": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 50,
+      "target": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 50,
+      "target": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 50,
+      "target": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 50,
+      "target": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 51,
+      "target": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 51,
+      "target": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 51,
+      "target": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 51,
+      "target": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 52,
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 52,
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 52,
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 52,
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 53,
+      "target": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 53,
+      "target": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 53,
+      "target": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 53,
+      "target": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 54,
+      "target": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4746
+    },
+    {
+      "orbit": 54,
+      "target": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3733
+    },
+    {
+      "orbit": 54,
+      "target": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3680
+    },
+    {
+      "orbit": 54,
+      "target": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3752
+    },
+    {
+      "orbit": 55,
+      "target": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 55,
+      "target": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 55,
+      "target": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 55,
+      "target": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 56,
+      "target": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 56,
+      "target": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 56,
+      "target": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 56,
+      "target": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 57,
+      "target": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 57,
+      "target": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 57,
+      "target": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 57,
+      "target": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 58,
+      "target": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 58,
+      "target": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 58,
+      "target": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 58,
+      "target": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 59,
+      "target": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 59,
+      "target": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 59,
+      "target": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 59,
+      "target": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 60,
+      "target": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 60,
+      "target": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 60,
+      "target": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 60,
+      "target": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 61,
+      "target": [
+        1,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 61,
+      "target": [
+        1,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 61,
+      "target": [
+        1,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 61,
+      "target": [
+        1,
+        3,
+        1,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 62,
+      "target": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4753
+    },
+    {
+      "orbit": 62,
+      "target": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3727
+    },
+    {
+      "orbit": 62,
+      "target": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3690
+    },
+    {
+      "orbit": 62,
+      "target": [
+        1,
+        3,
+        1,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3756
+    },
+    {
+      "orbit": 63,
+      "target": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 63,
+      "target": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 63,
+      "target": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 63,
+      "target": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 64,
+      "target": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 64,
+      "target": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 64,
+      "target": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 64,
+      "target": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 65,
+      "target": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 65,
+      "target": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 65,
+      "target": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 65,
+      "target": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 66,
+      "target": [
+        1,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 66,
+      "target": [
+        1,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 66,
+      "target": [
+        1,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 66,
+      "target": [
+        1,
+        3,
+        2,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 67,
+      "target": [
+        1,
+        3,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 67,
+      "target": [
+        1,
+        3,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 67,
+      "target": [
+        1,
+        3,
+        3,
+        0
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 67,
+      "target": [
+        1,
+        3,
+        3,
+        0
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 68,
+      "target": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 68,
+      "target": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 68,
+      "target": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 68,
+      "target": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 69,
+      "target": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 69,
+      "target": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 69,
+      "target": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 69,
+      "target": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    },
+    {
+      "orbit": 70,
+      "target": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 1204,
+      "rows_ub": 4740
+    },
+    {
+      "orbit": 70,
+      "target": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        1,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 979,
+      "rows_ub": 3726
+    },
+    {
+      "orbit": 70,
+      "target": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        0,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 943,
+      "rows_ub": 3679
+    },
+    {
+      "orbit": 70,
+      "target": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "core": [
+        1,
+        2,
+        3
+      ],
+      "lp_status": 2,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "vars": 898,
+      "rows_ub": 3745
+    }
+  ]
+}

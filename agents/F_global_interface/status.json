@@ -1,0 +1,8 @@
+{
+  "track": "F_global_interface",
+  "status": "HEURISTIC",
+  "headline": "Track initialized; no result yet",
+  "dependencies": [],
+  "artifacts": [],
+  "next_action": "Execute BRIEF.md"
+}

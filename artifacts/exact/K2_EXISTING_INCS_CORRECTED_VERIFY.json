@@ -1,0 +1,518 @@
+[
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      1,
+      3,
+      1
+    ],
+    "q15": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        1,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        6
+      ]
+    ],
+    "F": 8.952366333341047,
+    "surv": 318,
+    "F_corrected": 9.019134888527267,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      1,
+      3,
+      1
+    ],
+    "q15": [
+      0,
+      2,
+      2,
+      3
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5,
+        3
+      ]
+    ],
+    "F": 8.953985552711961,
+    "surv": 318,
+    "F_corrected": 9.020171195294322,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      1,
+      3,
+      1
+    ],
+    "q15": [
+      0,
+      2,
+      2,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        5,
+        4
+      ]
+    ],
+    "F": 8.951115193644492,
+    "surv": 318,
+    "F_corrected": 9.021629914441338,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      1,
+      3,
+      1
+    ],
+    "q15": [
+      0,
+      2,
+      4,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        3
+      ]
+    ],
+    "F": 8.948871382636653,
+    "surv": 318,
+    "F_corrected": 9.020890052530975,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      1,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        4,
+        3
+      ],
+      [
+        0,
+        2,
+        4,
+        4
+      ]
+    ],
+    "F": 8.953056257362629,
+    "surv": 318,
+    "F_corrected": 9.029751060149536,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      2,
+      3
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        3
+      ]
+    ],
+    "F": 8.96008705032379,
+    "surv": 318,
+    "F_corrected": 9.032640679053678,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      2,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        2,
+        5,
+        4
+      ]
+    ],
+    "F": 8.95763274435249,
+    "surv": 318,
+    "F_corrected": 9.024989463120937,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      4,
+      3
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        2,
+        3
+      ]
+    ],
+    "F": 8.958818648367824,
+    "surv": 318,
+    "F_corrected": 9.027360553303385,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      4
+    ],
+    "q15": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        4
+      ]
+    ],
+    "F": 8.944261830670815,
+    "surv": 318,
+    "F_corrected": 9.020200313842212,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      1,
+      4
+    ],
+    "q15": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        3
+      ]
+    ],
+    "F": 8.947287862287638,
+    "surv": 318,
+    "F_corrected": 9.022463762989165,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      2,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      1,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5,
+        3
+      ]
+    ],
+    "F": 8.942819112882201,
+    "surv": 318,
+    "F_corrected": 9.019999040920714,
+    "surv_corrected": 316
+  },
+  {
+    "q12": [
+      3,
+      3
+    ],
+    "q13": [
+      0,
+      3,
+      4
+    ],
+    "q14": [
+      2,
+      4,
+      3
+    ],
+    "q15": [
+      0,
+      2,
+      2,
+      4
+    ],
+    "status": 0,
+    "inc": true,
+    "msg": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "extra": [
+      [
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        4,
+        4
+      ]
+    ],
+    "F": 8.94674588355118,
+    "surv": 318,
+    "F_corrected": 9.022865277319793,
+    "surv_corrected": 316
+  }
+]

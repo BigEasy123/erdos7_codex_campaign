@@ -1,0 +1,11 @@
+FULLCOVER 71x4 EXACT FARKAS PACKAGE
+cases=284
+passed=284
+failed=0
+weakest_rhs_float=-0.451772506962
+strongest_rhs_float=-0.520872914183
+max_repairs=231
+max_repair_units=392
+min_active=248
+max_active=557
+sha256=2473c6a50c3dd802ebe19a0c5ba1fdf7498d2db5a116c80082d19aaa42c11c4f

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["track", "status", "headline", "dependencies", "artifacts", "next_action"],
+  "properties": {
+    "track": {"type": "string"},
+    "status": {"enum": ["PROVED_EXACT", "PROVED_SYMBOLIC", "NUMERICAL_EVIDENCE", "COUNTEREXAMPLE", "HEURISTIC", "UNKNOWN_TIMEOUT", "BLOCKED_DEPENDENCY"]},
+    "headline": {"type": "string"},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "exact_margins": {"type": "array", "items": {"type": "string"}},
+    "counterexamples": {"type": "array", "items": {"type": "string"}},
+    "next_action": {"type": "string"}
+  },
+  "additionalProperties": true
+}

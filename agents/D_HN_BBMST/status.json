@@ -1,0 +1,8 @@
+{
+  "track": "D_HN_BBMST",
+  "status": "HEURISTIC",
+  "headline": "Track initialized; no result yet",
+  "dependencies": [],
+  "artifacts": [],
+  "next_action": "Execute BRIEF.md"
+}

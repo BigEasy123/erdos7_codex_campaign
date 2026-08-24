@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+*.log
+.DS_Store
+.venv/
+venv/
+# Agents may create large transient solver files; keep only named certificates/checkpoints.
+artifacts/tmp/
