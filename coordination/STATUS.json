@@ -4,9 +4,9 @@
   "overall_status": "OPEN",
   "qed_gates_closed": 0,
   "qed_gates_total": 6,
-  "current_bottleneck": "CARD9 exact closure path is blocked; no dependency has yet been audited as AUDITED_EXACT by Track E",
+  "current_bottleneck": "CARD9 closure remains open after portability repair; no dependency has yet been audited as AUDITED_EXACT by Track E",
   "tracks": {
-    "A_card9": "BLOCKED_DEPENDENCY",
+    "A_card9": "NUMERICAL_EVIDENCE",
     "B_structure": "HEURISTIC",
     "C_commonU": "HEURISTIC",
     "D_HN_BBMST": "HEURISTIC",

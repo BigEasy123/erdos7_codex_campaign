@@ -2,16 +2,17 @@
 
 ## Verdict
 
-Status: **BLOCKED_DEPENDENCY**
+Status: **NUMERICAL_EVIDENCE**
 
-The exact CARD9 path is not yet valid as a theorem-producing implementation. The active solver code is still using stale absolute filesystem paths and imports a missing helper module that the checkpoint relies on for valid Benders-derived phase cuts. This is a repository portability and reconstruction failure, not a mathematical closure of the 9-parent layer.
+The CARD9 path is now repository-portable and the missing helper has been restored. The phase oracle exactly replays five saved rejected 9-parent sets, and a fresh sparse iteration rejects another 9-set. This is numerical evidence only, not a closure of the 9-parent layer.
 
 ## Reproduced evidence
 
-1. The file [src/card9_sparse_exact_benders.py](src/card9_sparse_exact_benders.py) still contains absolute path assumptions of the form `/mnt/data/erdos2275`, which are not valid in this repo checkout.
-2. The file [src/eonly_phase_benders.py](src/eonly_phase_benders.py) imports `eonly_card9_hybridprefix` and also assumes the same stale working directory, while the repository contains no corresponding helper file under [src](src).
-3. The checkpoint files in [artifacts/current_state](artifacts/current_state) show that the exact-cardinality pass is a saved snapshot, not an independently replayed finite proof. The available records show many rejected 9-sets with positive phase margin, but no exact closure certificate and no valid helper to replay the phase oracle from the repository itself.
-4. The phase-run ledger [artifacts/current_state/EONLY_PHASE_BENDERS.json](artifacts/current_state/EONLY_PHASE_BENDERS.json) only reports `ITER_LIMIT` and positive `phi` values, which is consistent with a partial numerical search, not exact infeasibility.
+1. The repository-relative verifier now passes, including core import and helper existence.
+2. The restored [src/eonly_card9_hybridprefix.py](src/eonly_card9_hybridprefix.py) derives only conservative threshold subset caps from the dual inequality.
+3. Five saved rejected sets replayed with exact matching floating values; maximum absolute difference was `0.0`.
+4. A fresh sparse iteration produced `phi = 0.10147076397503477`, added 42 symmetry nogoods, and ended at `ITER_LIMIT`; no infeasibility was inferred.
+5. The 42 symmetry maps pass permutation and parent-index preservation checks; 32 recorded rejected candidates all have positive phase margins, with minimum `phi = 0.08225417337323754`.
 
 ## Required fix before any CARD9 theorem claim
 
@@ -23,12 +24,12 @@ A valid theorem claim must satisfy the checklist in [agents/A_card9/BRIEF.md](ag
 - check the 42 symmetry maps and exact nogoods;
 - produce an optimizer-free exact certificate or a genuine phase-feasible 9-parent witness.
 
-Until those are satisfied, the headline claim must remain `BLOCKED_DEPENDENCY`.
+The headline claim must remain `NUMERICAL_EVIDENCE` until an optimizer-free exact certificate or a genuine phase-feasible witness is produced and Track E audits it.
 
 ## Repository-local verifier
 
-The script [agents/A_card9/verify_repo_relative.py](agents/A_card9/verify_repo_relative.py) checks the exact portability issue and confirms that the active code is not yet repository-relative. It is the minimal verification artifact required to prevent a false theorem claim.
+The script [agents/A_card9/verify_repo_relative.py](agents/A_card9/verify_repo_relative.py) now passes. The phase replay and symmetry checks were run as focused executable validations from the repository root.
 
 ## Impact on the project
 
-This does not prove the 9-parent layer is feasible or empty. It only establishes that the current solver stack is not yet a valid witness-based proof object. The next theorem-level task is to rebuild the missing phase oracle from the derivation in [src/eonly_phase_benders.py](src/eonly_phase_benders.py) and to validate it against the saved rejected sets before any CARD9 claim is promoted.
+This does not prove the 9-parent layer is feasible or empty. The next theorem-level task is to continue the sparse search, retain a standalone exact certificate if the master closes, and have Track E audit the helper derivation, symmetry handling, and every generated nogood.

@@ -1,11 +1,11 @@
 {
   "track": "A_card9",
-  "status": "BLOCKED_DEPENDENCY",
-  "headline": "Exact CARD9 solver is not repository-portable and depends on a missing phase helper; no valid theorem claim can be promoted.",
+  "status": "NUMERICAL_EVIDENCE",
+  "headline": "CARD9 solver is repository-portable and phase-replays saved rejections, but no exact closure certificate exists.",
   "dependencies": [
-    "Rebuild missing eonly_card9_hybridprefix helper from derivation",
-    "Validate phase oracle on saved rejected 9-parent sets",
-    "Reproduce 42-state symmetry maps and exact nogoods without stale absolute paths"
+    "Continue sparse Benders search beyond bounded smoke test",
+    "Produce optimizer-free exact certificate or phase-feasible witness",
+    "Track E audit helper derivation and generated nogoods"
   ],
   "artifacts": [
     "agents/A_card9/RESULT.md",
@@ -13,5 +13,5 @@
     "artifacts/current_state/EONLY_PHASE_BENDERS.json",
     "artifacts/current_state/CARD9_SPARSE_EXACT_RECORDS.json"
   ],
-  "next_action": "Reconstruct the missing phase oracle and re-run repository-relative CARD9 validation before any exact closure claim."
+  "next_action": "Continue the repository-relative CARD9 search while preserving exact replay inputs and refusing timeout-as-infeasible conclusions."
 }
