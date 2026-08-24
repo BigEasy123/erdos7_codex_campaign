@@ -1,0 +1,6 @@
+L0 EXCLUSION END-TO-END VERIFICATION: PASS
+scope: project reduction framework + stated published CRT inputs + audited finite certificates
+canonical rho3 positions: 0 CLOSED, 1 CLOSED, 2 CLOSED
+normal-form degeneracies: nested 9 / nested 25 / killed-branch higher classes removable by redundant-class relocation
+product gap: 3944 / 5 per outer residual point
+CONCLUSION: L0 = 218243025 is excluded within the project proof framework

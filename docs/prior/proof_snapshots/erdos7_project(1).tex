@@ -1,0 +1,757 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathcal F}
+\newcommand{\kg}{\mathrm{KG}}
+\newcommand{\MSF}{\mathrm{MSF}}
+\DeclareMathOperator{\LCM}{lcm}
+
+\title{Erd\H{o}s Problem \#7: Odd Distinct Covering Systems\\
+\large BFF reconstruction, finite certificates, and prime-power refinements}
+\author{Research working draft}
+\date{12 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fcolorbox{red!60!black}{red!5}{\parbox{0.92\textwidth}{
+\textbf{Status warning.} This is a working research document, not a paper or novelty claim.
+Statements explicitly labelled ``published'' are traced to cited sources.  Statements labelled
+``derived'' are deductions made in this project and should be independently checked before
+circulation.  The finite computations are reproduced by the accompanying exact-rational Python
+scripts.  In particular, the bound $218{,}243{,}025$ and the maximum-spanning-forest refinement
+have not been peer reviewed and are not asserted here to be absent from the prior literature.
+}}
+\end{center}
+
+\begin{abstract}
+Erd\H{o}s and Selfridge asked whether there exists a finite covering system of congruences
+$a_i\pmod{m_i}$ whose moduli are pairwise distinct, greater than one, and all odd.  We organize
+the problem in finite cyclic-group, product-space, divisor-lattice, hypergraph, probabilistic,
+and optimization languages.  We then reconstruct the exponent-sensitive necessary inequality
+of Berger, Felzenbaum and Fraenkel (BFF), emphasizing that their correction term is a forest
+bound on forced intersections.  This immediately suggests a derived maximum-spanning-forest
+refinement.  Combining published structural restrictions with exact enumeration of exponent
+vectors gives a provisional, fully reproducible deduction that a hypothetical odd covering has
+LCM at least $218{,}243{,}025$.  The boundary shape
+$3^3 5^2 7\cdot11\cdot13\cdot17\cdot19$ survives both the published BFF inequality and the
+first forest/triangle refinements, identifying a concrete target for further work.  A block or
+``tower capacity'' lemma is introduced as a second route for exploiting prime-power depth.  We
+then condition directly on the $3$-adic coordinate while retaining the actual cofactor residue
+classes.  This replaces the earlier reciprocal-capacity diagnostic by CRT-aware set bounds,
+forces a common residual of at least $234523/3233230$ in one nine-fibre branch, and yields a
+second $675\times323323$ ``heavy-fibre'' necessary condition for the boundary shape.
+\end{abstract}
+
+\tableofcontents
+
+\section{The problem and finite reformulations}
+
+A \emph{covering system} is a finite family
+\[
+ a_i\pmod{m_i},\qquad 1\le i\le k,
+\]
+whose union is all of $\Z$.  It is \emph{distinct} when the $m_i>1$ are pairwise distinct.
+Erd\H{o}s Problem \#7 asks whether a distinct covering can have every $m_i$ odd.
+
+Let
+\[
+ L=\LCM(m_1,\dots,m_k).
+\]
+The covering is periodic modulo $L$, so it is equivalent to a cover of $\Z/L\Z$ by cosets of
+subgroups.  If
+\[
+ L=\prod_{i=1}^{n}p_i^{s_i},\qquad p_1<\cdots<p_n,
+\]
+then the Chinese remainder theorem gives
+\[
+ \Z/L\Z\cong\prod_{i=1}^{n}\Z/p_i^{s_i}\Z.
+\]
+A divisor $m=\prod p_i^{d_i}$ is naturally encoded by a depth vector
+$\mathbf d=(d_1,\dots,d_n)$, $0\le d_i\le s_i$.  Thus a residue class modulo $m$ is a cylinder
+fixing $d_i$ $p_i$-adic digits in coordinate $i$.  The square-free case is the special case
+$s_i=1$ for every $i$; Balister et al. proved that an odd distinct covering is impossible in
+that case \cite{BalisterSquarefree2021}.  Consequently the unresolved problem is intrinsically
+multilevel or prime-power in nature.
+
+The same finite object can be viewed as a constrained set-cover problem, a hypergraph cover,
+or a probability problem on uniformly random $X\in\Z/L\Z$.  For the event
+$A_i=\{X\equiv a_i\pmod{m_i}\}$, $\Pr(A_i)=1/m_i$, while the Chinese remainder theorem controls
+many intersections.  These translations motivate both the BFF overlap inequality and modern
+SAT/MIP approaches.
+
+\section{Published structural restrictions}
+
+We record only the restrictions used later.
+
+\begin{theorem}[BFF II, published \cite{BFF1987}]
+If an odd incongruent covering system exists and the LCM has $n$ distinct prime factors, then
+$n\ge6$.  More precisely, the exponent-sensitive parameters defined in Section~\ref{sec:bff}
+must satisfy $g(\bar w,\bar{\mathbf z})\ge2$.
+\end{theorem}
+
+\begin{theorem}[Hough--Nielsen, published \cite{HoughNielsen2019}]
+Every distinct covering system contains a modulus divisible by $2$ or $3$.
+Hence, for an odd distinct covering,
+\[
+ 3\mid L.
+\]
+\end{theorem}
+
+\begin{theorem}[Balister et al., published \cite{BalisterSquarefree2021}]
+There is no distinct covering system with all moduli odd and square-free.  In particular, the
+LCM of a hypothetical odd distinct covering cannot be square-free.
+\end{theorem}
+
+A different theorem of Balister et al. gives the useful restriction that an odd covering LCM
+must be divisible by $9$ or $15$ \cite{BalisterDensity2022}.  It is not required for the
+finite bound derived below, but it is consistent with the first surviving shape.
+
+\section{Re-deriving the BFF inequality}\label{sec:bff}
+
+\subsection{The product box and building blocks}
+
+Write
+\[
+ L=\prod_{i=1}^{n}p_i^{s_i},\qquad P_i=p_i^{s_i}.
+\]
+BFF represent the relevant finite group by the product box
+\[
+ \mathcal P=[0,P_1)\times\cdots\times[0,P_n),
+ \qquad |\mathcal P|=L,
+\]
+and refine cosets into product ``building blocks'' indexed by nonempty subsets
+$I\subseteq[n]$.  The index records coordinates on which the block is restricted.
+After enlarging the family in a way that can only make covering easier, the number of
+blocks of a given index is bounded by BFF's quantity $\alpha(I)$.  The exceptional counts
+for one-coordinate indices are the source of the asymmetric first coordinate in the final
+formula \cite{BFF1987}.
+
+Remove the blocks whose index has cardinality one.  The remaining set $\mathcal S$ is again a
+product set.  Its coordinate sizes are
+\[
+ y_1=P_1-\frac{P_1-1}{p_1-1}
+     =\frac{(p_1-2)P_1+1}{p_1-1},
+\]
+and, for $i\ge2$,
+\[
+ y_i=P_i-2\frac{P_i-1}{p_i-1}
+     =\frac{(p_i-3)P_i+2}{p_i-1}.
+\]
+This normalization makes the BFF parameters transparent:
+\begin{align}
+ w&=\frac{P_1-1}{(p_1-2)P_1+1},\\
+ z_1&=\frac{p_1^{s_1-1}-1}{(p_1-2)P_1+1},\\
+ z_i&=\frac{P_i-1}{(p_i-3)P_i+2},\qquad 2\le i\le n.
+\end{align}
+They are normalized capacities of higher-index blocks inside the surviving box.
+
+\subsection{The pre-forest union bound}
+
+For $|I|\ge2$, BFF bound the fraction of $\mathcal S$ occupied by all blocks of index $I$.
+Summing these bounds and collecting terms gives
+\begin{equation}\label{eq:g1}
+ g_1(w,\mathbf z)
+ =(1+w)\prod_{i=2}^{n}(1+z_i)-w
+ -(1+w-z_1)\sum_{i=2}^{n}z_i.
+\end{equation}
+The naive argument would require $g_1\ge2$: the higher-index blocks must cover the entire
+residual product set, and $g_1-1$ is their normalized union-bound capacity.
+
+\subsection{Forced intersections and the forest lemma}
+
+Let $\mathcal J=\binom{[n]}2$.  For $I,J\in\mathcal J$ with $I\cap J=\varnothing$, BFF show
+under their worst-case enlargement that the corresponding type-$I$ and type-$J$ unions have
+forced intersection of normalized size
+\begin{equation}\label{eq:beta}
+ \beta(I,J)=\prod_{r\in I\cup J}z_r.
+\end{equation}
+They use the elementary forest inequality
+\[
+ \left|\bigcup_{v\in V}S_v\right|
+ \le \sum_{v\in V}|S_v|-
+ \sum_{\{u,v\}\in E(T)}|S_u\cap S_v|
+\]
+for any forest $T$ on the set family.  Therefore every forest on $\mathcal J$ whose edges join
+disjoint 2-subsets gives a legitimate forced-overlap correction.
+
+BFF choose one particular forest supported on the first five coordinates, with total weight
+\begin{equation}\label{eq:wbff}
+ W_{\rm BFF}
+ =3z_1z_2z_3z_4+3z_1z_2z_3z_5
+  +2z_1z_2z_4z_5+z_1z_3z_4z_5.
+\end{equation}
+Thus their published polynomial is
+\begin{equation}\label{eq:gbff}
+ g_{\rm BFF}=g_1-W_{\rm BFF},
+\end{equation}
+and a necessary condition for an odd distinct cover is
+\begin{equation}\label{eq:bffcondition}
+ g_{\rm BFF}\ge2.
+\end{equation}
+This re-derivation highlights the conceptual content: BFF is a naive capacity estimate minus a
+rigorously selected set of unavoidable overlaps.
+
+\section{Derived maximum-spanning-forest refinement}
+
+The published forest lemma does not require BFF's particular forest.  This yields an immediate
+optimization.
+
+\begin{definition}
+Let $G_n$ be the Kneser disjointness graph $\kg(n,2)$: vertices are the 2-subsets of $[n]$ and
+$I$ is adjacent to $J$ precisely when $I\cap J=\varnothing$.  Give each edge the weight
+$\beta(I,J)$ from \eqref{eq:beta}.  Let $W_{\MSF}(\mathbf z)$ be the maximum total weight of a
+forest in $G_n$.
+\end{definition}
+
+\begin{proposition}[Derived]
+Every odd distinct covering satisfies
+\begin{equation}\label{eq:gmsf}
+ g_{\MSF}(w,\mathbf z)
+ :=g_1(w,\mathbf z)-W_{\MSF}(\mathbf z)\ge2.
+\end{equation}
+Moreover $g_{\MSF}\le g_{\rm BFF}$.
+\end{proposition}
+
+\begin{proof}
+BFF's forest lemma and their exact intersection formula apply to every forest with edges between
+disjoint 2-index sets.  Choose a maximum-weight such forest.  The BFF forest is one feasible
+choice, hence $W_{\MSF}\ge W_{\rm BFF}$ and the resulting necessary condition is no weaker.
+\end{proof}
+
+For $n\ge5$, $\kg(n,2)$ is connected, so with positive weights the optimum can be taken as a
+maximum-weight spanning tree.  The accompanying script `msf\_refinement.py` constructs it by
+exact-rational Kruskal optimization.
+
+As a minimal hand-check that BFF's displayed tree need not be optimal, one may replace the last
+term of \eqref{eq:wbff} by $z_2z_3z_4z_5$ using a different admissible tree.  The gain is
+$(z_2-z_1)z_3z_4z_5$ whenever $z_2>z_1$; otherwise retain the published tree.
+
+\subsection{Connection with Hunter--Worsley bounds: where the pairwise route stops}
+
+The forest inequality used by BFF is the same structural mechanism as the Hunter--Worsley
+second-order upper bound for a union: subtract a maximum-weight spanning tree of pairwise
+intersections from the sum of the singleton probabilities \cite{Hunter1976,Worsley1982}.
+Modern probability-optimization literature sharpens the interpretation.  For fixed singleton
+probabilities together with only lower bounds on pairwise intersections, the optimal upper union
+bound is of Hunter type; Ramachandra and Natarajan summarize this result and its relation to
+Boros et al. \cite{BorosEtAl2014,RamachandraNatarajan2023}.
+
+Our BFF setting is not literally the generic fixed-marginal probability problem---the singleton
+quantities in \eqref{eq:g1} arise from an arithmetic relaxation---so we do not import an
+``optimality theorem'' blindly.  Nevertheless, after that relaxation, the only additional data
+used by the forest step are lower bounds on pair intersections for disjoint 2-index groups.  The
+maximum-spanning-forest refinement therefore exhausts the obvious Hunter--Worsley improvement of
+that pairwise data.  This is an important negative conclusion: a substantial next improvement
+should use information that BFF's pairwise forest discards, such as exact triple intersections,
+compatibility among coordinate projections, higher-index groups, or the prime-power fibre
+structure.
+
+\section{A provisional exact lower bound for the LCM}\label{sec:218m}
+
+This section combines published theorems with a finite exact computation.  It is deliberately
+labelled provisional pending independent verification and a more exhaustive novelty search.
+
+\subsection{Prime monotonicity for fixed exponent pattern}
+
+For $i\ge2$ define
+\[
+ z(p,s)=\frac{p^s-1}{(p-3)p^s+2}.
+\]
+Treating $p$ temporarily as a real variable,
+\begin{equation}\label{eq:zderivative}
+ \frac{\partial z}{\partial p}
+ =\frac{p^{s-1}\left(s(p-1)+p-p^{s+1}\right)}{\left((p-3)p^s+2\right)^2}.
+\end{equation}
+For $p\ge5$ and $s\ge1$, the numerator is negative, so $z(p,s)$ decreases with $p$.
+BFF state that $g_{\rm BFF}$ is increasing in its variables on the relevant domain
+\cite{BFF1987}.  Since Hough--Nielsen forces $p_1=3$, replacing any later ordered prime by a
+smaller allowed prime can only increase $g_{\rm BFF}$ for a fixed exponent vector.  The
+$s_1=1$ boundary, for which $z_1=0$, follows by evaluating the same polynomial on the closure of
+the domain.
+
+\subsection{Finite exponent enumeration}
+
+Set
+\begin{equation}\label{eq:X}
+ X=3^3 5^2 7\cdot11\cdot13\cdot17\cdot19
+  =218{,}243{,}025.
+\end{equation}
+
+For exactly six distinct prime factors, it suffices by the preceding monotonicity to enumerate
+positive exponent vectors for the minimal tuple
+\[
+ (3,5,7,11,13,17)
+\]
+whose minimal-prime shape is below $X$.  There are 89 such vectors.  Exact rational evaluation
+of \eqref{eq:gbff} gives $g_{\rm BFF}<2$ in every case.  The largest value is
+\[
+ \frac{506755}{255717}\approx1.98170242886
+\]
+at exponent vector $(4,3,1,1,1,1)$, whose minimal-prime shape is $172{,}297{,}125$.
+
+For exactly seven distinct prime factors, the minimal tuple is
+\[
+ (3,5,7,11,13,17,19).
+\]
+There are 16 positive exponent vectors below $X$.  Again every one has $g_{\rm BFF}<2$; the
+maximum is
+\[
+ \frac{117043}{60775}\approx1.92584121761
+\]
+at $(2,2,1,1,1,1,1)$, with shape $72{,}747{,}675$.
+
+For eight or more distinct primes, nonsquarefreeness and $3\mid L$ imply
+\[
+ L\ge3^2\cdot5\cdot7\cdot11\cdot13\cdot17\cdot19\cdot23
+   =334{,}639{,}305>X.
+\]
+
+\begin{proposition}[Derived + exact finite certificate; provisional]
+Assuming the published BFF, Hough--Nielsen, and square-free theorems as quoted above, the finite
+calculation in `verify\_218m\_bound.py` yields
+\[
+ \boxed{L\ge218{,}243{,}025}
+\]
+for the LCM of any hypothetical odd distinct covering system.
+\end{proposition}
+
+\begin{proof}
+BFF gives at least six distinct prime factors; Hough--Nielsen gives $3\mid L$; and the
+square-free theorem forces at least one exponent to exceed one.  If $L<X$, then $n\ge8$ is
+impossible by the displayed numerical lower bound.  For $n=6$ and $n=7$, prime monotonicity
+reduces every fixed exponent pattern to the corresponding minimal prime tuple, and the complete
+positive-exponent enumerations below $X$ have respectively 89 and 16 cases.  The accompanying
+CSV records the exact fraction $g_{\rm BFF}$ for every case; all are strictly below two,
+contradicting the BFF necessary condition.
+\end{proof}
+
+The script uses Python's `fractions.Fraction`; floating-point numbers are printed only for human
+readability.  The CSV is therefore an explicit finite arithmetic certificate, though not a
+formal proof-assistant certificate.
+
+\section{The first surviving boundary shape}
+
+At the boundary
+\begin{equation}\label{eq:L0}
+ L_0=3^3 5^2 7\cdot11\cdot13\cdot17\cdot19
+     =218{,}243{,}025,
+\end{equation}
+the BFF parameters are
+\[
+ w=\frac{13}{14},\qquad
+ (z_1,\dots,z_7)=
+ \left(\frac27,\frac6{13},\frac15,\frac19,\frac1{11},\frac1{15},\frac1{17}\right).
+\]
+Exact evaluation gives
+\[
+ g_{\rm BFF}=\frac{175089}{85085}\approx2.05781277546>2,
+\]
+so the published inequality no longer excludes the shape.
+
+The maximum-spanning-forest refinement gives
+\[
+ g_{\MSF}=\frac{2608283}{1276275}\approx2.04366848837>2.
+\]
+Thus forest optimization closes about a quarter of the BFF excess above two, but not enough to
+eliminate $L_0$.
+
+\section{Going one order beyond forests: an exact triangle cluster}
+
+When $n\ge6$, $\kg(n,2)$ contains triangles: three pairwise-disjoint 2-subsets
+$I,J,K$.  For such a triple, product structure fixes not only all three pair intersections but
+also the triple intersection.  Hence the union of these three type groups admits exact
+third-order inclusion--exclusion,
+\[
+ |A_I\cup A_J\cup A_K|
+ =\sum |A|-\sum |A\cap A'|+|A_I\cap A_J\cap A_K|,
+\]
+with normalized triple intersection
+\[
+ \gamma(I,J,K)=\prod_{r\in I\cup J\cup K}z_r.
+\]
+Contract the triangle to one cluster.  The remaining groups can again be attached by a forest;
+for an edge from the cluster to an outside group, use any one triangle member whose guaranteed
+intersection lies inside the cluster intersection, and choose the largest such lower bound.
+This gives a rigorous derived refinement.
+
+At $L_0$, exhaustive exact search over triangle choices gives
+\[
+ g_{\triangle}=\frac{23472541}{11486475}
+ \approx2.04349384820>2.
+\]
+The gain beyond the maximum spanning forest is real but small.  This experiment indicates that
+higher-order type-2 inclusion--exclusion by itself is unlikely to close the remaining gap; the
+prime-power depth should enter more directly.
+
+\section{A block or tower capacity lemma}
+
+McNew and Setty define $r(n)$ as the largest number of residues modulo $n$ coverable by distinct
+nontrivial divisors of $n$, and $c(n)=1+r(n)/n$.  Thus $n$ is a covering number exactly when
+$c(n)=2$.  They prove
+\[
+ c(mn)\le c(m)h(n),\qquad (m,n)=1,
+ \qquad h(n)=\frac{\sigma(n)}n,
+\]
+and conjecture the stronger coprime submultiplicativity $c(mn)\le c(m)c(n)$
+\cite{McNewSetty2026}.  The following elementary block lemma is tailored to the CRT product.
+
+\begin{lemma}[Derived block-capacity certificate]\label{lem:block}
+Let
+\[
+ N=M_1\cdots M_t,
+\]
+where the $M_j$ are pairwise coprime.  Suppose $R_j$ is an upper bound for $r(M_j)$.  Call a
+nontrivial divisor $d\mid N$ \emph{pure} if $d\mid M_j$ for some $j$, and \emph{mixed}
+otherwise.  If
+\begin{equation}\label{eq:blockcertificate}
+ \sum_{\substack{d\mid N\\d\text{ mixed}}}\frac1d
+ <
+ \prod_{j=1}^{t}\left(1-\frac{R_j}{M_j}\right),
+\end{equation}
+then $N$ is not a covering number.
+\end{lemma}
+
+\begin{proof}
+Pure congruences supported inside block $M_j$ cover at most $R_j$ residues in that coordinate.
+By CRT, after all pure congruences there remains a Cartesian product of coordinate complements
+of relative size at least the right-hand side of \eqref{eq:blockcertificate}.  A mixed modulus
+$d$ covers exactly a fraction $1/d$ of the full space, so all mixed moduli together cover at
+most the left-hand side by the union bound.  If that capacity is smaller than the guaranteed
+pure-block residual, some point remains uncovered.
+\end{proof}
+
+The left side is easy to compute:
+\[
+ \sum_{d\text{ mixed}}\frac1d
+ =h(N)-1-\sum_{j=1}^{t}\bigl(h(M_j)-1\bigr).
+\]
+For prime powers one has the exact formula
+\[
+ r(p^a)=1+p+\cdots+p^{a-1}=\frac{p^a-1}{p-1},
+\]
+since the union bound is attained by choosing pairwise-disjoint residue classes at successive
+$p$-adic depths.
+
+At $L_0$, use the tower blocks
+\[
+ 27,25,7,11,13,17,19.
+\]
+The guaranteed pure-block residual is
+\[
+ \frac{3072}{12155}\approx0.25273549979,
+\]
+whereas the mixed reciprocal budget is
+\[
+ \frac{6954221}{11486475}\approx0.60542690425.
+\]
+Thus the simplest block certificate fails.  This failure is informative: a successful
+prime-power argument must either absorb many mixed moduli into larger blocks, improve the
+block capacities $r(M)$ substantially, or prove significant unavoidable overlap among the
+mixed moduli.
+
+\section{Conditioning on the 3-adic coordinate with actual cofactor sets}\label{sec:cofactor}
+
+The scalar calculation in the previous version of this draft kept only reciprocal capacities in
+each fibre.  It showed why a naive fibre union bound cannot work, but it discarded the main
+arithmetic information: in every compatible fibre a class modulo $3^a d$ projects to the
+\emph{same residue class modulo $d$} in the cofactor coordinate.  We now retain those sets.
+
+Write
+\[
+ L_0=27Q,\qquad Q=25\cdot7\cdot11\cdot13\cdot17\cdot19=8{,}083{,}075.
+\]
+For $t\in\Z/27\Z$, identify the fibre
+\[
+ F_t=\{x\in\Z/L_0\Z:x\equiv t\pmod{27}\}
+\]
+with $\Z/Q\Z$ by CRT.  If a congruence has modulus $3^a d$, $(d,3)=1$, then it either misses
+$F_t$ or, on every compatible fibre, becomes one residue class
+\[
+ C_{a,d}\subseteq \Z/Q\Z
+\]
+of modulus $d$.  In particular, a depth-zero class $d$ gives the same set in all 27 fibres; a
+depth-one class $3d$ gives the same set in all nine fibres below one mod-$3$ branch; and so on.
+This is the set-valued coupling that the reciprocal-capacity model lost.
+
+\subsection{CRT-aware bounds for the cofactor unions}
+
+McNew and Setty define $r(n)$ as the largest number of residues modulo $n$ coverable by
+distinct divisor moduli, and use a CRT inclusion--exclusion bound over pairwise-coprime
+subfamilies \cite{McNewSetty2026}.  Their same calculation applies to the small-multiplicity
+multisets needed below.  In the present cases the multiplicity is smaller than the least prime
+divisor of the cofactor, so repeated copies of one modulus can be taken with distinct residues.
+For $k$ copies of each nontrivial divisor, the normalized bound is
+\[
+ U_k(N)=\sum_{\substack{d\mid N\\d>1}}
+ \frac{B(k,\omega(d))}{d},
+ \qquad
+ B(k,r)=-\sum_{j=1}^{r}(-k)^j S_2(r,j),
+\]
+where $S_2(r,j)$ is a Stirling number of the second kind.  The script
+\texttt{cofactor\_set\_attack.py} evaluates these quantities exactly.
+
+For $Q$ we obtain
+\[
+ U_1(Q)=\frac{3338}{5225}\approx0.63885167464,
+\]
+so the depth-zero cofactor classes leave an \emph{actual set}
+\[
+ R_0=(\Z/Q\Z)\setminus U_0
+\]
+with
+\[
+ \frac{|R_0|}{Q}\ge
+ 1-U_1(Q)=\frac{1887}{5225}\approx0.36114832536.
+\]
+This is much stronger than the old reciprocal-sum estimate, which allowed the depth-zero
+classes nominal capacity $0.85561$.
+
+If one ignores the 3-adic branch assignment and optimistically allows two copies of every
+cofactor divisor in a single fibre, the same CRT calculation gives
+\[
+ U_2(Q)=\frac{1536162}{1616615}\approx0.95023366726.
+\]
+Hence every fibre not covered wholesale by the modulus-$3$ class still has a nonempty
+cofactor residual after depths zero and one, of relative size at least
+\[
+ \frac{80453}{1616615}\approx0.04976633274.
+\]
+The branch coupling lets us improve this further.
+
+\subsection{A common residual in one nine-fibre branch}
+
+The unique modulus-$3$ congruence covers one complete mod-$3$ branch.  Any class $3d$ with
+$d>1$ assigned to that same branch is globally redundant: moving its mod-$3$ residue to one
+of the other two branches cannot uncover anything in the already-full branch and can only add
+coverage elsewhere.  Thus, when deriving a necessary condition, we may optimistically assume
+that every nontrivial depth-one class is assigned to one of the two remaining branches, call
+them $B$ and $C$.
+
+Let $U_B,U_C\subseteq\Z/Q\Z$ be the actual unions obtained from all depth-zero classes together
+with the depth-one classes compatible with $B$ or $C$, respectively.  The same pairwise-coprime
+CRT polynomial can be summed over the two branches before the residue choices are known.  If
+$S$ is a pairwise-coprime collection of $k$ cofactor divisors and $x$ of their second copies are
+sent to $B$, its multiplicity factor in the two branch bounds is
+\[
+ 2^x+2^{k-x}.
+\]
+For odd $k$ (positive inclusion--exclusion sign), this is at most $2^k+1$.  For even $k$
+(negative sign), it is at least $2^{k/2+1}$.  Applying those inequalities termwise gives the
+assignment-independent bound
+\[
+ \frac{|U_B|+|U_C|}{Q}
+ \le
+ \frac{2998707}{1616615}
+ \approx1.85492959053.
+\]
+Therefore one of the two branches, say $B$, has a \emph{common residual set}
+\[
+ R_B=(\Z/Q\Z)\setminus U_B
+\]
+shared by all nine of its descendant mod-$27$ fibres, with
+\begin{equation}\label{eq:branch-residual}
+ \boxed{
+ \frac{|R_B|}{Q}\ge
+ \frac{234523}{3233230}
+ \approx0.07253520473.}
+\end{equation}
+This is the first genuinely set-coupled $3$-adic obstruction in the project: the same residual
+points of the cofactor must now be covered nine times by the depth-two and depth-three classes.
+
+\subsection{A second conditioning: $675\times R$ and heavy fibres}
+
+The branch residual is not yet large enough to defeat the remaining classes by a raw capacity
+argument.  A useful second view is obtained by grouping both prime-power coordinates:
+\[
+ L_0=675R,\qquad
+ R=7\cdot11\cdot13\cdot17\cdot19=323{,}323.
+\]
+The $R$-coordinate is square-free.  First consider the ``pure base'' classes whose moduli are
+nontrivial divisors of $675$ and have $R$-cofactor $1$.  The one-copy CRT bound gives
+\[
+ U_1(675)=\frac{487}{675}.
+\]
+Consequently at least
+\[
+ 675-487=188
+\]
+of the $675$ base fibres are not covered wholesale by a pure $3^a5^b$ congruence.
+
+Fix one such fibre $t$.  For each nontrivial divisor $d\mid R$, let $k_d(t)$ be the number of
+compatible congruences among the twelve possible moduli
+\[
+ 3^a5^b d,\qquad 0\le a\le3,\quad0\le b\le2.
+\]
+If we cap every $k_d(t)$ at four, the square-free cofactor classes cover at most
+\[
+ U_4(R)=\frac{315604}{323323}\approx0.97612604114.
+\]
+Every fifth or later copy of modulus $d$ can add at most a further fraction $1/d$.  Therefore
+coverability of a non-pure fibre forces the weighted excess condition
+\begin{equation}\label{eq:heavy-fibre}
+ \boxed{
+ \sum_{\substack{d\mid R\\d>1}}
+ \frac{(k_d(t)-4)_+}{d}
+ \ge
+ \frac{7719}{323323}
+ \approx0.02387395886.}
+\end{equation}
+Summed over the at least 188 non-pure fibres, the required weighted excess is at least
+\[
+ \frac{1451172}{323323}\approx4.48830426539.
+\]
+Thus every hypothetical covering of $L_0$ must manufacture a substantial family of
+\emph{heavy base fibres}: fibres on which several of the $3^a5^b d$ classes with the same
+square-free cofactor divisor $d$ line up simultaneously.
+
+There is also an immediate finite reduction in the cofactor divisor.  For fixed $d$, at most
+12 base multipliers $3^a5^b$ are available, so $(k_d(t)-4)_+\le8$.  The total contribution that
+could possibly come from the divisors $d\ge1729$ is
+\[
+ 8\sum_{\substack{d\mid R\\d\ge1729}}\frac1d
+ =\frac{6544}{323323}
+ <\frac{7719}{323323}.
+\]
+Hence every non-pure fibre must receive positive heavy excess from one of the following 19
+small cofactor divisors:
+\[
+\begin{split}
+&7,11,13,17,19,77,91,119,133,143,187,209,221,247,323,\\
+&1001,1309,1463,1547.
+\end{split}
+\]
+More quantitatively, these 19 divisors alone must contribute at least
+\[
+ \frac{1175}{323323}\approx0.00363413676
+\]
+of weighted excess on every non-pure fibre.  This cuts the cross-$d$ search from 31 possible
+square-free divisors to 19 before any optimization is performed.
+
+This reduction still does not exclude $L_0$.  In fact, an explicit set-valued witness on the
+$675$-point base shows that the current heavy-excess relaxation is feasible.  The pure base
+classes
+\[
+0(3),\ 4(5),\ 2(9),\ 13(15),\ 0(25),\ 5(27),\ 8(45),\ 10(75),\
+7(135),\ 16(225),\ 1(675)
+\]
+cover exactly $487$ base fibres, attaining the preceding upper bound and leaving exactly 188.
+For each of the 19 small cofactor divisors one can then choose a compatible aligned base residue
+profile for the classes $3^a5^b d$ so that, on every one of those 188 uncovered fibres, the
+small-divisor weighted excess is at least
+\[
+ \frac{86}{17017}\approx0.00505376976
+ >\frac{1175}{323323}.
+\]
+The full list of aligned residues is verified exactly in
+\texttt{heavy\_set\_relaxation.py}.  This is not a covering of $L_0$; it is a witness that the
+current \emph{base-only relaxation} survives.  Consequently the missing obstruction must retain
+the residue classes in the square-free coordinate $\Z/R\Z$ as well as their $675$-base support.
+
+A first coarse moment bound does not yet contradict \eqref{eq:heavy-fibre}.  For one fixed
+$d$, if $N_d(t)=k_d(t)-1$ counts only the eleven nontrivial base multipliers, then
+\[
+ (N_d(t)-3)_+\le \frac15\binom{N_d(t)}2.
+\]
+The sum of the maximum pairwise intersection sizes of the eleven divisor classes on
+$\Z/675\Z$ is exactly $525$, hence
+\[
+ \sum_{t\bmod675}(k_d(t)-4)_+\le105.
+\]
+After summing this separately over all $d\mid R$, the resulting ceiling is about $52.13$, far
+above the required $4.49$.  So the present moment estimate is too weak by roughly an order of
+magnitude.  The missing information is not another scalar density: it is the simultaneous
+compatibility pattern of the heavy sets for the different square-free divisors $d$.  That is now
+the main target of the fibre attack.
+
+The earlier reciprocal-capacity calculation is retained in \texttt{fiber\_relaxation.py} as a
+negative diagnostic; all new exact constants and CRT set calculations in this section are
+reproduced by \texttt{cofactor\_set\_attack.py}.
+
+\section{Relation to the current computational frontier}
+
+Mian and Siddique formalized finite exclusions in Lean and proved, with a kernel-checked
+certificate chain, that any odd covering LCM exceeds $10{,}000$ \cite{MianSiddique2026}.  Their
+paper emphasizes a finite CRT bridge designed to consume future search certificates.  McNew and
+Setty use optimization to push the classification of primitive covering numbers essentially
+through $10^6$, with one unresolved even case in that range \cite{McNewSetty2026}.  These works
+and the present BFF-based calculation have different trust models and purposes: the aim here is
+a compact structural certificate rather than a large black-box classification.
+
+Recent constructive work also shows that the odd-modulus problem is close to solvable when one
+permits limited repetition; for example, constructions with only a small number of repeats of a
+chosen odd modulus are studied in \cite{Bispels2025}.  Such constructions reinforce the view
+that prime-power branching is central rather than incidental.
+
+\section{Next proof targets}
+
+The numerical checkpoint at $L_0$ gives a focused research program.
+
+\begin{enumerate}[label=\arabic*.]
+\item \textbf{Heavy-set compatibility on the $675$ base.}  Build on
+\eqref{eq:heavy-fibre}: the current pair-moment estimate treats the heavy sets for different
+$d\mid R$ independently.  The next target is a cross-$d$ inequality exploiting the fact that the
+corresponding cofactor residue classes must also cover the same points of the square-free group
+$\Z/R\Z$.  A successful bound should control the weighted union of heavy fibres rather than its
+separate one-$d$ marginals.
+
+\item \textbf{Mixed-block overlap.}  Strengthen Lemma~\ref{lem:block} by replacing the union
+bound on mixed moduli with an overlap-sensitive bound.  The natural inputs are the CRT
+dependency graph and exact block capacities $r(M)$.
+
+\item \textbf{Higher-order BFF clusters.}  Generalize the triangle experiment to a certified
+junction-tree or hypergraph inequality using all exactly known intersections of pairwise-disjoint
+index sets.  The target is not merely a better numerical correction but a closed-form inequality
+that remains monotone in the prime parameters.
+
+\item \textbf{Independent certification.}  Reimplement the 105-case exponent certificate in a
+second system and conduct a targeted literature search for the exact $218{,}243{,}025$ corollary
+and maximum-spanning-forest formulation before making any novelty claim.
+\end{enumerate}
+
+\section{Reproducibility map}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+File & Role & Evidence level\\
+\midrule
+\texttt{bff\_core.py} & BFF formulas + optimized forest & published + derived\\
+\texttt{verify\_218m\_bound.py} & 105 exact exponent cases & exact computation\\
+\texttt{certificate\_218m.csv} & human-auditable case table & exact computation\\
+\texttt{msf\_refinement.py} & optimized forest edges & derived + exact computation\\
+\texttt{triangle\_exploration.py} & one-triangle cluster & derived/exploratory\\
+\texttt{tower\_capacity.py} & block-capacity lemma/test & derived/exploratory\\
+\texttt{fiber\_relaxation.py} & 3-adic scalar-capacity diagnostic & exploratory/exact\\
+\texttt{cofactor\_set\_attack.py} & CRT-aware 3-adic/$675$ cofactor attack & derived + exact\\
+\texttt{cofactor\_set\_output.txt} & exact constants from cofactor attack & exact computation\\
+\texttt{heavy\_set\_relaxation.py} & explicit 675-base relaxation witness & exploratory + exact\\
+\texttt{heavy\_set\_relaxation\_output.txt} & witness residues and checks & exact computation\\
+\texttt{research\_log.md} & provenance and next steps & audit trail\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+\end{document}
