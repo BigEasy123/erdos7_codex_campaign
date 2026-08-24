@@ -61,3 +61,9 @@ All six QED gates remain open at project level. Local Stage-18, K2, and 284-case
 ## Highest-value next step
 
 Rebuild the pooled LP with a restartable repository-local builder that saves the full rationalizable matrix, row bounds, variable ordering, and solver dual output. Then construct an optimizer-free rational dual verifier for `sum(e) > 8`, without treating the floating optimum as exact.
+
+## Exact-certificate run update
+
+The deterministic CARD9 phase builder was serialized into [artifacts/card9_exact/CARD9_MODEL_SCHEMA.json](../artifacts/card9_exact/CARD9_MODEL_SCHEMA.json): 14,500 variables and 17,898 rows. Rational-dual tooling was added in [src/card9_exact_phase.py](../src/card9_exact_phase.py) and [src/verify_card9_phase_certificate.py](../src/verify_card9_phase_certificate.py). On the first saved rejection, the raw floating SciPy dual failed exact Fraction verification, so no certificate was created. This confirms the remaining blocker is certificate reconstruction, not missing execution plumbing.
+
+This update was checkpointed in the exact-certificate tooling commit; retrieve the ending SHA with `git rev-parse HEAD`.

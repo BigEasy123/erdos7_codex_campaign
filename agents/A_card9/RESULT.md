@@ -13,6 +13,7 @@ The CARD9 path is now repository-portable and the missing helper has been restor
 3. Five saved rejected sets replayed with exact matching floating values; maximum absolute difference was `0.0`.
 4. A fresh sparse iteration produced `phi = 0.10147076397503477`, added 42 symmetry nogoods, and ended at `ITER_LIMIT`; no infeasibility was inferred.
 5. The 42 symmetry maps pass permutation and parent-index preservation checks; 32 recorded rejected candidates all have positive phase margins, with minimum `phi = 0.08225417337323754`.
+6. The canonical [CARD9 model schema](../../artifacts/card9_exact/CARD9_MODEL_SCHEMA.json) records 14,500 variables and 17,898 phase rows. A raw floating SciPy dual for a saved rejection failed exact `Fraction` verification, so no phase certificate was emitted.
 
 ## Required fix before any CARD9 theorem claim
 
@@ -32,4 +33,4 @@ The script [agents/A_card9/verify_repo_relative.py](agents/A_card9/verify_repo_r
 
 ## Impact on the project
 
-This does not prove the 9-parent layer is feasible or empty. The next theorem-level task is to continue the sparse search, retain a standalone exact certificate if the master closes, and have Track E audit the helper derivation, symmetry handling, and every generated nogood.
+This does not prove the 9-parent layer is feasible or empty. The next theorem-level task is to freeze rational source constants and repair a phase dual certificate so that [src/verify_card9_phase_certificate.py](../../src/verify_card9_phase_certificate.py) passes without an optimizer.

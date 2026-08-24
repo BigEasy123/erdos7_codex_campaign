@@ -1,6 +1,6 @@
 # Highest-value next actions
 
-1. Continue the repository-relative Track A CARD9 sparse search, preserving each phase witness and generating an optimizer-independent certificate if the master closes.
+1. Freeze rational source constants and obtain an optimizer-independent exact dual lower-bound certificate for one rejected phase; the raw floating dual currently fails exact verification.
 
 2. Rebuild the pooled LP with its full matrix and dual data, then attempt exactification of the `8.7641692325...` lower bound under its stated relaxation.
 
