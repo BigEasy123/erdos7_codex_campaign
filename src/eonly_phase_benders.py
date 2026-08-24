@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import sys,time,json,math
+import pathlib,sys,time,json,math
 import numpy as np
 from scipy.optimize import linprog,milp,Bounds,LinearConstraint
 from scipy.sparse import csr_matrix,lil_matrix,vstack,hstack
-sys.path.insert(0,'/mnt/data/erdos2275')
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import state2275_child_pooled_master as p
 
 class PhaseOracle:
@@ -92,7 +93,8 @@ def run(maxit=50):
   cuts.append((g,rhs))
  else: status='ITER_LIMIT'
  out={'status':status,'cuts':len(cuts),'records':records,'oracle_build':O.buildsec}
- json.dump(out,open('/mnt/data/erdos2275/EONLY_PHASE_BENDERS.json','w'),indent=2)
+ output = ROOT / 'artifacts' / 'current_state' / 'EONLY_PHASE_BENDERS.json'
+ json.dump(out,open(output,'w'),indent=2)
  print('RESULT',status,'cuts',len(cuts),flush=True)
  return out
 if __name__=='__main__':run(50)

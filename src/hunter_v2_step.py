@@ -1,10 +1,12 @@
-import sys,json,time,os,argparse
+import pathlib,sys,json,time,os,argparse
 import numpy as np
-sys.path.insert(0,'/mnt/data/erdos2275')
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import state2275_hunter_benders_v2 as hb
-CUTLOG='/mnt/data/erdos2275/HUNTER_V2_CUTLOG.json'
-STATE='/mnt/data/erdos2275/HUNTER_V2_STATE.json'
-WIT='/mnt/data/erdos2275/TOWER_HEAVY_BBMST_V3_002_WITNESS.json'
+CURRENT = ROOT / 'artifacts' / 'current_state'
+CUTLOG = str(CURRENT / 'HUNTER_V2_CUTLOG.json')
+STATE = str(CURRENT / 'HUNTER_V2_STATE.json')
+WIT = str(CURRENT / 'TOWER_HEAVY_BBMST_V3_002_WITNESS.json')
 
 def ctx0():
  ctx=hb.build_context(.02,False);ctx[0][:]=0;return ctx

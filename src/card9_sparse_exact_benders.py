@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-import sys,pickle,itertools,time,os,json
+import pathlib,sys,pickle,itertools,time,os,json
 import numpy as np
 from scipy.optimize import milp,Bounds,LinearConstraint
 from scipy.sparse import lil_matrix
-sys.path.insert(0,'/mnt/data/erdos2275')
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import state2275_hn_milp as s
 import eonly_card9_hybridprefix as h
-CP='/mnt/data/erdos2275/EONLY_CARD9_COMPACT30.pkl';NP='/mnt/data/erdos2275/EONLY_CARD9_NOGOODS.pkl';OP='/mnt/data/erdos2275/PHASE_ORACLE.pkl';RP='/mnt/data/erdos2275/CARD9_SPARSE_EXACT_RECORDS.json';K=9
+from eonly_phase_benders import PhaseOracle
+CP=ROOT/'artifacts/current_state/EONLY_CARD9_COMPACT30.pkl';NP=ROOT/'artifacts/current_state/EONLY_CARD9_NOGOODS.pkl';OP=ROOT/'artifacts/current_state/PHASE_ORACLE.pkl';RP=ROOT/'artifacts/current_state/CARD9_SPARSE_EXACT_RECORDS.json';K=9
 
-def ap(o,p):t=p+'.tmp';pickle.dump(o,open(t,'wb'),protocol=pickle.HIGHEST_PROTOCOL);os.replace(t,p)
-def aj(o,p):t=p+'.tmp';json.dump(o,open(t,'w'),indent=2);os.replace(t,p)
+def ap(o,p):
+ t=os.fspath(p)+'.tmp';pickle.dump(o,open(t,'wb'),protocol=pickle.HIGHEST_PROTOCOL);os.replace(t,os.fspath(p))
+def aj(o,p):
+ t=os.fspath(p)+'.tmp';json.dump(o,open(t,'w'),indent=2);os.replace(t,os.fspath(p))
 def maps():
  idx={a:i for i,a in enumerate(s.R)};out=[];u2=(3,4,5);u3=(3,4,5,6,7,8,9)
  for p2 in itertools.permutations(u2):
@@ -29,7 +33,7 @@ def master(C,N,tlim=10):
   hi[rr]=cap
  st=time.time();r=milp(np.zeros(331),integrality=np.ones(331,dtype=int),bounds=Bounds(np.zeros(331),np.ones(331)),constraints=LinearConstraint(A.tocsr(),lo,hi),options={'time_limit':tlim,'mip_rel_gap':0,'presolve':True});return r,time.time()-st,len(rows)
 def run(maxit=40):
- C=pickle.load(open(CP,'rb'));N=pickle.load(open(NP,'rb')) if os.path.exists(NP) else set();O=pickle.load(open(OP,'rb'));R=json.load(open(RP)) if os.path.exists(RP) else []
+ C=pickle.load(open(CP,'rb'));N=pickle.load(open(NP,'rb')) if os.path.exists(NP) else set();O=pickle.load(open(OP,'rb')) if os.path.exists(OP) else PhaseOracle();R=json.load(open(RP)) if os.path.exists(RP) else []
  for q in range(maxit):
   mr,ms,nr=master(C,N,10);print('MASTER',q,'st',mr.status,'inc',mr.x is not None,'sec',round(ms,3),'C',len(C),'N',len(N),flush=True)
   if mr.x is None:

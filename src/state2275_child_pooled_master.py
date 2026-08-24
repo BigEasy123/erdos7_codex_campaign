@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import sys,time,json,argparse
+import pathlib,sys,time,json,argparse
 import numpy as np
 from scipy.optimize import milp,Bounds,LinearConstraint
 from scipy.sparse import lil_matrix,vstack,hstack,csr_matrix
-sys.path.insert(0,'/mnt/data/erdos2275')
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
 import state2275_hunter_benders_v2 as hb
 import hunter_v2_step as hs
 import state2275_hn_milp as s
