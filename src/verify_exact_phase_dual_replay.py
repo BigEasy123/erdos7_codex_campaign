@@ -60,6 +60,12 @@ def main() -> int:
         return 2
 
     multipliers = [max(0.0, -float(v)) for v in result.ineqlin.marginals]
+    if len(multipliers) != len(rows):
+        print('PHASE_DUAL_CERTIFICATE_STATUS=BLOCKED')
+        print('REASON=DUAL_ROW_COUNT_MISMATCH')
+        print('SYSTEM_ROWS', len(rows))
+        print('INEQUALITY_MULTIPLIERS', len(multipliers))
+        return 4
     valid, lower_bound = exact_dual_check(rows, bounds, objective, multipliers)
     if not valid:
         print('PHASE_DUAL_CERTIFICATE_STATUS=BLOCKED')
