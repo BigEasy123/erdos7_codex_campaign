@@ -1,0 +1,15 @@
+{
+  "common_u_284_exact": "AUDITED_EXACT",
+  "state2275_local_obstruction": "NUMERICAL_ONLY",
+  "card9_phase_model_exact": "BROKEN",
+  "card9_finite_unsat": "BROKEN",
+  "hunter_cut_exact_source_replay": "AUDITED_EXACT",
+  "child_pooling_relaxation_safe": "BROKEN",
+  "low_four_canonical_state_extremality": "PLAUSIBLE_UNAUDITED",
+  "all_7637_state_lift": "OPEN",
+  "prime_13_73_handoff": "PLAUSIBLE_UNAUDITED",
+  "prime_gt73_termination": "PLAUSIBLE_UNAUDITED",
+  "repeated_power_control": "BROKEN",
+  "least_counterexample_compression": "PLAUSIBLE_UNAUDITED",
+  "global_qed_chain": "OPEN"
+}

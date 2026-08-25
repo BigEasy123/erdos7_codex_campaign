@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "project": "Erdos7_campaign",
+  "headline": "No final theorem claim is valid; the exact/replay gate is closed only for local finite artifacts.",
+  "entries": [
+    {
+      "id": "counterexample_001",
+      "category": "exactness",
+      "claim": "The CARD9 phase model is exact and theorem-ready.",
+      "status": "COUNTEREXAMPLE",
+      "evidence": [
+        "src/state2275_child_pooled_master.py still performs float conversion in unresolved_groups and child-capacity rows.",
+        "artifacts/card9_exact/RATIONAL_MODEL_SCHEMA.json reports BLOCKED_DEPENDENCY.",
+        "src/compare_card9_float_exact_models.py explicitly states that the pooled child weights remain float-generated."
+      ],
+      "consequence": "Any exact proof claim based on the current CARD9 matrix is invalid."
+    },
+    {
+      "id": "counterexample_002",
+      "category": "proof_chain",
+      "claim": "The numeric phase rejection proves a valid exact phase certificate.",
+      "status": "COUNTEREXAMPLE",
+      "evidence": [
+        "the repo records numerical phase values and positive phi values but no optimizer-free exact dual is produced for a saved rejected set.",
+        "the exact rational bridge is still blocked by unresolved coefficient provenance."
+      ],
+      "consequence": "No theorem claim can advance beyond numerical evidence for CARD9."
+    },
+    {
+      "id": "counterexample_003",
+      "category": "global_lift",
+      "claim": "State 2275 extremality automatically implies all-state domination.",
+      "status": "COUNTEREXAMPLE",
+      "evidence": [
+        "docs/QED_GATES.md explicitly requires lift from state 2275 to all canonical states as a separate gate.",
+        "the repository contains no exact proof of this lift."
+      ],
+      "consequence": "The final theorem is not reached by local extremality alone."
+    },
+    {
+      "id": "counterexample_004",
+      "category": "repeated_power",
+      "claim": "Squarefree-structure lemmas carry over unchanged to repeated powers.",
+      "status": "COUNTEREXAMPLE",
+      "evidence": [
+        "repeated-power triangle types 85-90 remain an explicit open structural problem in the project docs.",
+        "the exact finite theorem remains restricted to the lower-depth or squarefree path."
+      ],
+      "consequence": "Any claim that repeated powers are handled by the current exact finite reductions is invalid."
+    }
+  ]
+}
