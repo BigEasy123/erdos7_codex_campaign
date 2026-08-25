@@ -1,0 +1,37 @@
+{
+  "status": "BLOCKED_DEPENDENCY",
+  "exhaustion": [
+    10,
+    19,
+    34,
+    35,
+    37,
+    39,
+    40,
+    158,
+    227
+  ],
+  "reason": "FLOAT_DUAL_NOT_EXACTLY_FEASIBLE_AT_TESTED_THRESHOLDS",
+  "attempts": [
+    {
+      "delta": "1/100",
+      "valid": false,
+      "lower_bound": null
+    },
+    {
+      "delta": "1/200",
+      "valid": false,
+      "lower_bound": null
+    },
+    {
+      "delta": "1/500",
+      "valid": false,
+      "lower_bound": null
+    },
+    {
+      "delta": "1/1000",
+      "valid": false,
+      "lower_bound": null
+    }
+  ]
+}

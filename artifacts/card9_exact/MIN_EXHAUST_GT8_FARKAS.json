@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED_DEPENDENCY",
+  "target": "sum(e) <= 8 infeasibility",
+  "reason": "EXACT_SAFE_POOLED_MODEL_NOT_SERIALIZED",
+  "source_status": "FLOAT_DEPENDENT_CHILD_POOLING_BUILDER",
+  "required_next_step": "Prove genuine-continuation inclusion and serialize all pooled coefficients over Q"
+}
