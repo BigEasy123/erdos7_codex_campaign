@@ -1,0 +1,14 @@
+{
+  "project": "Erdos Problem #7",
+  "starting_head": "ace6ab5880982fc9248e52fe222d84156fce3bf2",
+  "phase_status": "NUMERICAL_EVIDENCE",
+  "exact_certificate_status": "ABSENT",
+  "rational_model_status": "BLOCKED_DEPENDENCY",
+  "dual_certificate_status": "ABSENT",
+  "latest_validated_commands": [
+    "python scripts/validate_checkpoint.py",
+    "python agents/A_card9/verify_repo_relative.py"
+  ],
+  "smallest_obstruction": "The phase LP is generated from float coefficients without an exact rational coefficient provenance for every row family.",
+  "next_proof_gate": "Freeze exact coefficient families and derive a dual lower bound with exact arithmetic replay."
+}

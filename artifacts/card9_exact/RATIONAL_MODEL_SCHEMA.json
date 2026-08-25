@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "statement": "CARD9 pooled child-capacity plus Hunter phase relaxation",
+  "status": "BLOCKED_DEPENDENCY",
+  "proof_status": "BLOCKED_DEPENDENCY",
+  "exactly_known_families": {
+    "integer_incidence": {
+      "status": "EXACT",
+      "examples": {
+        "resolved_digit_link": [
+          1,
+          -1,
+          0
+        ],
+        "single_parent_exhaustion_var": [
+          1,
+          -1
+        ],
+        "cardinality_constraint": [
+          1
+        ]
+      },
+      "notes": "The incidence matrix entries are exact integers in the repository design."
+    },
+    "HN_constants": {
+      "status": "EXACT",
+      "values": {
+        "alpha": "51603567726348558328760981369659084133279683367/4373107200000000000000000000000000000000000000000",
+        "beta": "14493601981951/13781250000000000",
+        "R_HN": "1985876874482391730913463316715795569734245382761/4115865600000000000000000000000000000000000000000",
+        "HRHS": "24124656481523493/50000000000000000"
+      },
+      "notes": "The HN constants are already documented exactly in docs/CURRENT_FRONTIER.md."
+    }
+  },
+  "blocked_families": {
+    "BBMST_coefficients": {
+      "status": "BLOCKED_DEPENDENCY",
+      "notes": "The exact BBMST weights in the child-pooling rows are still generated through the float builder path."
+    },
+    "tower_weights": {
+      "status": "BLOCKED_DEPENDENCY",
+      "notes": "The tower weights embedded in the pooled child relaxation are not yet available as an exact source object independent of the float builder."
+    },
+    "conditional_child_weights": {
+      "status": "BLOCKED_DEPENDENCY",
+      "notes": "The child-capacity coefficients depend on unresolved deep-3 and tail group weights from the float builder."
+    },
+    "Hunter_overlap_terms": {
+      "status": "BLOCKED_DEPENDENCY",
+      "notes": "Historical Hunter cuts have no exact rational certificate stored alongside the solver output."
+    }
+  },
+  "blocked_dependencies": [
+    "The explicit float-valued weights in src/state2275_child_pooled_master.py are not yet traced back to exact source formulas.",
+    "The saved Hunter cut log does not carry exact rational coefficients alongside its generated signatures.",
+    "The child-pooling model still uses float arithmetic when creating the sparse phase matrix."
+  ],
+  "required_next_step": "Reconstruct each unresolved coefficient family from the exact finite combinatorial source and re-run the dual verification with Fraction arithmetic only."
+}
