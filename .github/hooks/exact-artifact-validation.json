@@ -1,0 +1,63 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "name": "validate-exact-artifact-sha256",
+        "type": "command",
+        "description": "Auto-verify SHA256 for newly created or modified files in artifacts/exact/",
+        "command": "./scripts/hooks/validate_artifact_sha256.sh",
+        "timeout": 30,
+        "windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/hooks/validate_artifact_sha256.ps1",
+        "cwd": ".",
+        "trigger": "artifacts/exact/**"
+      },
+      {
+        "name": "validate-repository-paths",
+        "type": "command",
+        "description": "Reject absolute paths in theorem-critical files (docs/GATE1_*.md, coordination/referee_queue/**)",
+        "command": "./scripts/hooks/validate_repository_paths.sh",
+        "timeout": 20,
+        "windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/hooks/validate_repository_paths.ps1",
+        "cwd": ".",
+        "trigger": "docs/GATE1_*.md,coordination/referee_queue/**"
+      },
+      {
+        "name": "run-declared-verifier",
+        "type": "command",
+        "description": "Execute optimizer-free verifier when a theorem declares one",
+        "command": "./scripts/hooks/run_declared_verifier.sh",
+        "timeout": 60,
+        "windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/hooks/run_declared_verifier.ps1",
+        "cwd": ".",
+        "trigger": "docs/GATE1_SAFE_RELAXATION_THEOREM.md,docs/**_THEOREM.md"
+      },
+      {
+        "name": "check-proved-exact-completeness",
+        "type": "command",
+        "description": "Verify that PROVED_EXACT theorems include both SHA256 hash and verifier command",
+        "command": "./scripts/hooks/check_proved_exact_completeness.sh",
+        "timeout": 15,
+        "windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/hooks/check_proved_exact_completeness.ps1",
+        "cwd": ".",
+        "trigger": "docs/**THEOREM*.md"
+      }
+    ],
+    "PreCompact": [
+      {
+        "name": "archive-failed-audits",
+        "type": "command",
+        "description": "Before compacting context, ensure coordination/referee_queue/FAILED/ is archived",
+        "command": "./scripts/hooks/archive_failed_audits.sh",
+        "timeout": 10,
+        "windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/hooks/archive_failed_audits.ps1",
+        "cwd": "."
+      }
+    ]
+  },
+  "meta": {
+    "description": "Mechanical artifact validation hooks for Erdős 7 exact proof pipeline. DO NOT let passing hooks promote mathematical claims. Hooks verify mechanical properties (hashes, paths, verifier runability) only. All mathematical claims must be reviewed by E_referee in coordination/referee_queue/.",
+    "critical_note": "These hooks are MECHANICAL CHECKS ONLY. A passing hook does NOT mean a theorem is mathematically correct. E_referee audit is mandatory for gate closure.",
+    "created": "2026-08-25",
+    "scope": "erdos7-gate1-closer agent and proof coordination"
+  }
+}
